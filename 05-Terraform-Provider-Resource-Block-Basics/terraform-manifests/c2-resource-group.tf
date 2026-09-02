@@ -3,5 +3,9 @@
 resource "azurerm_resource_group" "myrg" {
   name = "myrg-1"
   location = "East US"
-  tags = "Test1"
+  tags = {
+    environment = "dev"
+    owner = "Vinay"
+    costcenter = "VinSys"
+}
 }
